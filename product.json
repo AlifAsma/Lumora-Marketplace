@@ -1,0 +1,109 @@
+[
+    {
+        "id": 1,
+        "name": "The Alchemist",
+        "category": "Books",
+        "price": 1500,
+        "image": "Images/books/book1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Atomic Habits",
+        "category": "Books",
+        "price": 1800,
+        "image": "Images/books/book2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "The Forty Rules of Love",
+        "category": "Books",
+        "price": 2000,
+        "image": "Images/books/book3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Ikigai",
+        "category": "Books",
+        "price": 1600,
+        "image": "Images/books/book4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Rich Dad Poor Dad",
+        "category": "Books",
+        "price": 1700,
+        "image": "Images/books/book5.jpg"
+    },
+
+    {
+        "id": 6,
+        "name": "Burgundy Court Shoes",
+        "category": "Ladies Shoes",
+        "price": 6500,
+        "image": "Images/shoes/Shoe1.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Classic Black Heels",
+        "category": "Ladies Shoes",
+        "price": 5500,
+        "image": "Images/shoes/Shoe2.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Elegant Beige Pumps",
+        "category": "Ladies Shoes",
+        "price": 6000,
+        "image": "Images/shoes/Shoe3.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Minimal White Heels",
+        "category": "Ladies Shoes",
+        "price": 5800,
+        "image": "Images/shoes/Shoe4.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Elegant Brown Shoes",
+        "category": "Ladies Shoes",
+        "price": 6200,
+        "image": "Images/shoes/Shoe5.jpg"
+    },
+
+    {
+        "id": 11,
+        "name": "Vanilla Glow Candle",
+        "category": "Candles",
+        "price": 1200,
+        "image": "Images/candles/Candle1.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Rose Scented Candle",
+        "category": "Candles",
+        "price": 1400,
+        "image": "Images/candles/Candle2.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Amber Luxury Candle",
+        "category": "Candles",
+        "price": 1800,
+        "image": "Images/candles/Candle3.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Lavender Calm Candle",
+        "category": "Candles",
+        "price": 1500,
+        "image": "Images/candles/Candle4.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Cinnamon Spice Candle",
+        "category": "Candles",
+        "price": 1300,
+        "image": "Images/candles/Candle5.jpg"
+    }
+]

@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumora | Online Marketplace</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            LUMORA
+        </div>
+
+
+        <nav class="navbar">
+
+            <a href="#products">Shop</a>
+            <a href="#categories">Categories</a>
+
+        </nav>
+
+
+        <button class="cart-btn" id="cartBtn">
+
+            🛒 Cart
+
+            <span id="cartCount">0</span>
+
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small-text">
+                DISCOVER SOMETHING BEAUTIFUL
+            </p>
+
+            <h1>
+                Books, Shoes & Candles
+            </h1>
+
+            <p>
+                Explore our carefully selected collection
+                and find something you love.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Explore Collection
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-container">
+
+
+        <!-- ================= FILTER SIDEBAR ================= -->
+
+        <aside class="filters" id="categories">
+
+            <h2>
+                Filters
+            </h2>
+
+
+            <!-- Search -->
+
+            <div class="filter-group">
+
+                <label for="search">
+                    Search Products
+                </label>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search here..."
+                >
+
+            </div>
+
+
+            <!-- Categories -->
+
+            <div class="filter-group">
+
+                <h3>
+                    Categories
+                </h3>
+
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="Books"
+                    >
+
+                    Books
+
+                </label>
+
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="Ladies Shoes"
+                    >
+
+                    Ladies Shoes
+
+                </label>
+
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        class="category-filter"
+                        value="Candles"
+                    >
+
+                    Candles
+
+                </label>
+
+            </div>
+
+
+            <!-- Price Filter -->
+
+            <div class="filter-group">
+
+                <h3>
+                    Price Range
+                </h3>
+
+                <input
+                    type="range"
+                    id="priceRange"
+                    min="500"
+                    max="20000"
+                    value="20000"
+                >
+
+                <div class="price-range">
+
+                    <span>
+                        PKR 500
+                    </span>
+
+                    <span id="priceValue">
+                        PKR 20,000
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Sort -->
+
+            <div class="filter-group">
+
+                <h3>
+                    Sort By
+                </h3>
+
+                <select id="sort">
+
+                    <option value="default">
+                        Default
+                    </option>
+
+                    <option value="low-high">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high-low">
+                        Price: High to Low
+                    </option>
+
+                    <option value="name-a-z">
+                        Name: A to Z
+                    </option>
+
+                    <option value="name-z-a">
+                        Name: Z to A
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Clear Filters -->
+
+            <button
+                class="clear-btn"
+                id="clearFilters"
+            >
+                Clear Filters
+            </button>
+
+        </aside>
+
+
+
+        <!-- ================= PRODUCTS AREA ================= -->
+
+        <section class="products-section" id="products">
+
+
+            <div class="products-header">
+
+                <div>
+
+                    <p class="section-label">
+                        OUR COLLECTION
+                    </p>
+
+                    <h2>
+                        Explore Products
+                    </h2>
+
+                </div>
+
+
+                <p id="productCount">
+                    0 Products
+                </p>
+
+            </div>
+
+
+            <!-- Product Cards will be generated here by JavaScript -->
+
+            <div
+                class="product-grid"
+                id="productGrid"
+            >
+
+                <!-- JavaScript will add product cards here -->
+
+            </div>
+           
+
+            <!-- No Products Message -->
+
+            <div
+                class="no-products"
+                id="noProducts"
+            >
+
+                <h3>
+                    No products found
+                </h3>
+
+                <p>
+                    Try changing your search or filters.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    ></div>
+
+
+    <aside
+        class="cart-sidebar"
+        id="cartSidebar"
+    >
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button
+                class="close-cart"
+                id="closeCart"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- Cart Items -->
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
+
+            <!-- JavaScript will add cart items here -->
+
+        </div>
+
+
+        <!-- Cart Footer -->
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    PKR 0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                Checkout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 LUMORA. All rights reserved.
+        </p>
+
+        <p>
+            Books • Ladies Shoes • Candles
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript File -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
